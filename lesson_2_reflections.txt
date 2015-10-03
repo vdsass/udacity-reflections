@@ -1,0 +1,18 @@
+Q1. What happens when you initialize a repository? Why do you need to do it?
+A1. Initializing a repository creates a .git subirectory and populates it with git metadata. The git repository needs to be initialized so you can use git to track files.
+
+Q2. How is the staging area different from the working directory and the repository? What value do you think it offers?
+A2. The staging area is an intermediate directory store for files pending a commit. Using the staging area provides an opportunity to revert a potentially unwanted commit.
+
+Q3. How can you use the staging area to make sure you have one commit per logical change?
+A3. Use git diff to see how many and what changes exist between the working directory and staging area.
+
+Q4. What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+A4. Git branches isolate code for new features, bug fixes, and experimentation apart from working production code.
+
+Q5. How do the diagrams help you visualize the branch structure?
+A5. Diagrams show branches off the master, clearly indicating the commit where the branch was created and the number of commits (changes) within the branch.
+
+Q6. What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+A6. Pro: Git determines the best ancestor to use, which makes merging an easy task for the user.
+    Con: Git's ancestor choice may be not what you intended.
