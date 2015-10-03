@@ -1,0 +1,21 @@
+Q1. How did viewing a diff between two versions of a file help you see the bug that was introduced?
+A1. A diff between two versions of a file reduces the volume of text that needs to be examined for differences.
+
+Q2. How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+A2. Access to a file's change history makes it easy to see what changes were made and what motivated the change. This makes it easier and more efficient to find coding or logic errors.
+
+Q3. What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+A3. PROS: A modified capability can be tested and verified prior to a commit.
+    CONS: User has to make a decision about the size (breadth and depth) of a commit.
+
+Q4. Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+A4. VCS's like Git need to consider multiple files since they are usually interdependent and execute together to solve a solution. Systems like Google Docs do not, in general, work with file interdependencies.
+
+Q5. How can you use the commands git log and git diff to view the history of files?
+A5. Use git log to see the history of commits and author explanations regarding the change. Use git diff to see the details of changes in each file of the commit: lines added, lines deleted, and lines changed.
+
+Q6. How might using version control make you more confident to make changes that could break something?
+A6. Version control can provide confidence in knowing that changes can be made to any and all files in the repository without fear that previously working code will be lost. A programmer will be able to discover errors and revert any/all changes made to the repository files at any time.
+
+Q7. Now that you have your workspace set up, what do you want to try using Git for?
+A7. Training projects and personal code development.
