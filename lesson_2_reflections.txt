@@ -1,5 +1,5 @@
 Q1. What happens when you initialize a repository? Why do you need to do it?
-A1. Initializing a repository creates a .git subirectory and populates it with git metadata. The git repository needs to be initialized so you can use git to track files.
+A1. Initializing a repository creates a .git subdirectory and populates it with git metadata. The git repository needs to be initialized so you can use git to track files.
 
 Q2. How is the staging area different from the working directory and the repository? What value do you think it offers?
 A2. The staging area is an intermediate directory store for files pending a commit. Using the staging area provides an opportunity to revert a potentially unwanted commit.
@@ -13,6 +13,10 @@ A4. Git branches isolate code for new features, bug fixes, and experimentation a
 Q5. How do the diagrams help you visualize the branch structure?
 A5. Diagrams show branches off the master, clearly indicating the commit where the branch was created and the number of commits (changes) within the branch.
 
-Q6. What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
-A6. Pro: Git determines the best ancestor to use, which makes merging an easy task for the user.
-    Con: Git's ancestor choice may be not what you intended.
+Q6. What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+A6. a. Commits from the merged branches are combined into one branch.
+    b. The merge is represented as one commit (i.e., bubble) because that's what is accomplished - changes from one branch are interleaved with changes from the second branch into one commit.
+
+Q7. What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+A7. PRO: Git determines a 'best' solution, which makes merging an easy task for the developer.
+    CON: Git's choice may be not what you intend.
