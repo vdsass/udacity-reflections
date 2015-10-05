@@ -20,3 +20,6 @@ A6. a. Commits from the merged branches are combined into one branch.
 Q7. What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
 A7. PRO: Git determines a 'best' solution, which makes merging an easy task for the developer.
     CON: Git's choice may be not what you intend.
+
+Q8. Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+A8. Other developers may update the remote repository and you may not want to incorporate those changes into your local repository.
